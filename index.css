@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 650px;
+}
+
+nav {
+    border: 1px solid #000;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    background-color: #000;
+    z-index: 10;
+}
+
+.nav-left {
+    margin-left: 20px;
+}
+
+.nav-right {
+    margin-right: 20px;
+}
+
+.nav-left > ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+.nav-left > ul > li {
+    padding: 6px;
+
+}
+
+.nav-left > ul > li > a {
+    color: #999;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.nav-right > ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.nav-right > ul > li {
+    padding: 6px;
+
+}
+
+.nav-right > ul > li > a {
+    color: #999;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.main-banner {
+}
+
+.banner-img > img {
+    width: 100%;
+    height: 500px;
+    min-height: 450px;
+    max-height: 700px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    border: 1px solid black;
+    height: 1000px;
+}
+
+.content-sidemenu {
+    border: 1px solid black;
+    width: 300px;
+    height: 1000px;
+    background-color: #333;
+}
+
+
+.side-article {
+    border: 1px solid black;
+    margin: 20px 10px;
+    height: 500px;
+}
+
+.sidemenu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+
+.sidemenu-items1 {
+    width: 100%;
+    margin: 10px 0;
+    padding: 0px 10px;
+}
+
+.sidemenu-items1-big {
+    border: 1px solid black;
+    background-color: #333;
+    height: 60px;
+    text-align: right;
+    font-size: 24px;
+    line-height: 60px;
+    color: white;
+}
+
+.sidemenu-item2-box {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: flex-end;
+}
+
+.sidemenu-item2-box > ul {
+    list-style: none;
+    display: block;
+}
+
+.sidemenu-items2 {
+    border: 1px solid black;
+    background-color: green;
+    height: 40px;
+    width: 70%;
+    margin-left: 30%;
+}
+
+
+
+.content-mainmenu {
+    border: 1px solid black;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.main-article {
+    border: 1px solid black;
+    width: 300px;
+    height: 1000px;
+}
