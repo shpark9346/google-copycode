@@ -3,6 +3,7 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
+    font-family: 'Blinker', sans-serif;
 }
 
 body {
@@ -68,90 +69,174 @@ nav {
 
 .banner-img > img {
     width: 100%;
-    height: 500px;
+    height: 550px;
     min-height: 450px;
     max-height: 700px;
-}
-
-.content {
-    display: flex;
-    justify-content: center;
-    padding: 0 20px;
-    border: 1px solid black;
-    height: 1000px;
-}
-
-.content-sidemenu {
-    border: 1px solid black;
-    width: 300px;
-    height: 1000px;
-    background-color: #333;
+    object-position: center;
+    object-fit: cover;
 }
 
 
-.side-article {
-    border: 1px solid black;
-    margin: 20px 10px;
-    height: 500px;
+.side-wrap {
+    flex: 1;
+    align-self: flex-start;
+    position: sticky;
+}
+
+.article-wrap {
+    flex: 4;
+    padding-left: 24px;
+    overflow-y: scroll;
+    max-height: 1000px;
 }
 
 .sidemenu {
-    list-style: none;
     display: flex;
-    flex-direction: column;
-    align-content: space-between;
-}
-
-
-.sidemenu-items1 {
-    width: 100%;
-    margin: 10px 0;
-    padding: 0px 10px;
-}
-
-.sidemenu-items1-big {
-    border: 1px solid black;
-    background-color: #333;
-    height: 60px;
-    text-align: right;
-    font-size: 24px;
-    line-height: 60px;
-    color: white;
-}
-
-.sidemenu-item2-box {
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
     justify-content: flex-end;
 }
 
-.sidemenu-item2-box > ul {
+.sidemenu-box {
+    margin-left: 50px;
+    width: 75%;
+}
+
+.main-content {
+    display: flex;
+    width: 100%;
+    padding-top: 40px;
+    background-color: #202020;
+}
+
+.sidemenu1-box {
+}
+
+
+.sidemenu1-item {
+    height: 48px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    border-radius: 100px;
+    position: relative;
+    margin-bottom: 4px;
+    align-items: center;
+}
+
+.sidemenu1-item > span > img {
+    position: relative;
+    display: inline-block;
+    margin-right: 14px;
+    top: 3px;
+    width: 18px;
+    height: 18px;
+    font-size: 0;
+}
+
+.sidemenu2-box {
     list-style: none;
+    display: none;
+}
+
+.sidemenu2-box.is-on {
     display: block;
 }
 
-.sidemenu-items2 {
-    border: 1px solid black;
-    background-color: green;
-    height: 40px;
-    width: 70%;
-    margin-left: 30%;
+.sidemenu2-box li {
+    box-sizing: inherit;
 }
 
+.sidemenu2-item {
+    color: hsl(230,4%,50%);
+    padding: 7px 12px 7px 48px;
+    line-height: 1.4;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+}
 
-
-.content-mainmenu {
-    border: 1px solid black;
-    width: 1200px;
+.article-title {
+    height: 50px;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    color: white;
 }
 
+.article-box {
+    min-height: 1200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
 
-
-.main-article {
-    border: 1px solid black;
+.article-item {
     width: 300px;
-    height: 1000px;
+    height: 328px;
+    position: relative;
+}
+
+.article-item a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.article-img-box {
+    position: relative;
+    height: 176px;
+    margin-bottom: 14px;
+}
+
+.article-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 12px;
+    object-position: center;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.article-script {
+    height: 100px;
+}
+
+.article-script-info {
+
+}
+
+.article-script-author {
+    color: white;
+    opacity: 0.8;
+    display: inline-block;
+    max-width: 180px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 18px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.article-script-time {
+    color: white;
+    opacity: 0.8;
+    display: inline-block;
+    max-width: 180px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 18px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.article-script h2 {
+    color: hsl(230,4%,90%);
+    font-weight: 700;
+    margin-top: 12px;
+    line-height: 23px;
+    font-size: 16px;
 }
